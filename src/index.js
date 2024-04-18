@@ -32,10 +32,10 @@ app.put("/:id", async (req, res) => {
     description: req.body.description,
     image_url: req.body.image_url,
     trailer_url: req.body.trailer_url,
-  });
-  return res.send(film);
-},{
+  },{
     new: true
+});
+  return res.send(film);
 });
 
 app.post("/", async (req, res) => {
